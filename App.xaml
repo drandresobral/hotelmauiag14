@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Application xmlns="http://schemas.microsoft.com/dotnet/2021/maui" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="AppHotelAgenda13.App">
+<Application.Resources><ResourceDictionary>
+<Color x:Key="Primary">#102D42</Color><Color x:Key="Accent">#00A9A0</Color><Color x:Key="Background">#F2F7FA</Color><Color x:Key="Muted">#526575</Color>
+<Style TargetType="Label"><Setter Property="TextColor" Value="#102D42"/></Style>
+<Style TargetType="Button"><Setter Property="BackgroundColor" Value="#102D42"/><Setter Property="TextColor" Value="White"/><Setter Property="CornerRadius" Value="16"/><Setter Property="Padding" Value="18,14"/></Style>
+<Style TargetType="Entry"><Setter Property="TextColor" Value="#102D42"/><Setter Property="BackgroundColor" Value="White"/></Style>
+</ResourceDictionary></Application.Resources></Application>
