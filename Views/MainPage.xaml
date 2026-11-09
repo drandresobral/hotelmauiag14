@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="AppHotelAgenda13.Views.MainPage" Title="Reservar" BackgroundColor="#F2F7FA"><ScrollView><VerticalStackLayout Padding="24,28" Spacing="15">
+<Label Text="SUA RESERVA" FontSize="13" FontAttributes="Bold" TextColor="#008F88" CharacterSpacing="3"/><Label Text="Planeje sua estadia" FontSize="30" FontAttributes="Bold"/>
+<Border BackgroundColor="#DDF5F2" StrokeThickness="0" StrokeShape="RoundRectangle 18" Padding="18"><Label Text="Escolha a acomodação e as datas. O valor será calculado automaticamente." FontSize="15"/></Border>
+<Label Text="Nome do hóspede" FontAttributes="Bold"/><Entry x:Name="NomeEntry" Placeholder="Nome completo"/>
+<Label Text="Tipo de acomodação" FontAttributes="Bold"/><Picker x:Name="QuartoPicker" Title="Selecione o quarto" BackgroundColor="White" SelectedIndexChanged="OnQuartoChanged"/>
+<Label x:Name="CapacidadeLabel" Text="" TextColor="#526575" FontSize="13"/>
+<Label Text="Quantidade de hóspedes" FontAttributes="Bold"/><HorizontalStackLayout Spacing="16" VerticalOptions="Center"><Stepper x:Name="HospedesStepper" Minimum="1" Maximum="8" Increment="1" Value="2" ValueChanged="OnHospedesChanged"/><Label x:Name="HospedesLabel" Text="2 hóspedes" VerticalTextAlignment="Center"/></HorizontalStackLayout>
+<Label Text="Data de entrada" FontAttributes="Bold"/><DatePicker x:Name="EntradaPicker" Format="dd/MM/yyyy" BackgroundColor="White" DateSelected="OnEntradaChanged"/>
+<Label Text="Data de saída" FontAttributes="Bold"/><DatePicker x:Name="SaidaPicker" Format="dd/MM/yyyy" BackgroundColor="White" DateSelected="OnSaidaChanged"/>
+<Border BackgroundColor="White" Stroke="#D9E5EB" StrokeShape="RoundRectangle 18" Padding="18"><VerticalStackLayout Spacing="8"><Label Text="Prévia do valor" FontAttributes="Bold"/><Label x:Name="PreviaLabel" Text="" FontSize="22" FontAttributes="Bold" TextColor="#008F88"/><Label x:Name="DiariasLabel" Text="" FontSize="13" TextColor="#526575"/></VerticalStackLayout></Border>
+<Button Text="Ver resumo da reserva" Clicked="OnReservarClicked"/><Button Text="Limpar formulário" BackgroundColor="#DCE9EF" TextColor="#102D42" Clicked="OnLimparClicked"/><Label Text="Valores ilustrativos para fins acadêmicos." FontSize="12" HorizontalTextAlignment="Center" TextColor="#526575"/>
+</VerticalStackLayout></ScrollView></ContentPage>
