@@ -1,1 +1,0 @@
-Esta pasta deve conter capturas REAIS da execução da tela Sobre em emulador ou dispositivo Android. Não foram geradas capturas fictícias.
